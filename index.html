@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="incrementer counterBox">
+        <h1>Counter</h1>
+        <div class="counterContainer container">
+            <button class="subOne" onclick="decrement()">-</button>
+            <p class="increment counter"></p>
+            <button class='addOne' onclick="increment()">+</button>
+        </div>   
+        <button class="addOne changeButton" onclick="toPrime()">Change To Primer</button>
+        <p class="descript">This Counter does incremental changes</p>
+    </div>
+
+    <div class="primer counterBox beGone">
+        <h1>Primer</h1>
+        <div class="primerContainer container">
+            <button class="subOne" onclick="subPrime()">-</button>
+            <p class="prime counter"></p>
+            <button class='addOne' onclick="addPrime()">+</button>
+        </div>
+        <button class="addOne changeButton" onclick="toPrime()">Change To Fibonacci</button>
+        <p class="descript">This Counter counts in primes</p>
+
+    </div>
+
+    <div class="fibonacci counterBox beGone">
+        <h1>Fibonacci</h1>
+        <div class="fibonacciContainer container">
+            <button class="subOne" onclick="decrementFib()">-</button>
+            <p class="fib counter"></p>
+            <button class='addOne' onclick="incrementFib()">+</button>
+        </div>  
+        <button class="addOne changeButton" onclick="toPrime()">Change To Incrementer</button> 
+        <p class="descript">This Counter follows the fibonacci sequence</p>
+    </div>
+
+</body>
+<script src="code.js"></script>
+</html>
